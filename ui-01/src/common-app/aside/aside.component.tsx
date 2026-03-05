@@ -18,6 +18,22 @@ export const Aside: React.FC = () => {
         </button>
       </div>
       <h4 style={{ fontSize: `${!!isExpanded ? "22px" : "12px"}` }}>Aside</h4>
+      <ul
+        style={{
+          opacity: isExpanded ? 1 : 0,
+        }}
+      >
+        {Array.from({ length: 10 }, (_, i) => i).map((num: number) => (
+          <li
+            key={num}
+            style={{
+              fontSize: isExpanded ? "18px" : "10px",
+            }}
+          >
+            Element {num}
+          </li>
+        ))}
+      </ul>
     </div>
   );
 };

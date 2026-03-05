@@ -7,6 +7,7 @@
   min-width: 70px;
   transition: flex-basis 1s;
   padding: 0.25rem;
+  gap: 1rem;
 
   .boxBtnSideBar {
     display: flex;
@@ -34,5 +35,27 @@
   h4 {
     border: solid;
     transition: font-size 1s;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    gap: 1rem;
+    transition: opacity 0.5s;
+
+    list-style-type: square;
+    padding-left: 1.2rem;
+    margin: initial;
+    width: 100%;
+    li {
+      transition: font-size 0.5s;
+      display: list-item;
+      text-align: left;
+      list-style-type: square;
+      width: 100%;
+    }
   }
 }
