@@ -44,14 +44,14 @@
     align-items: flex-start;
 
     gap: 1rem;
-    transition: opacity 0.5s;
+    transition: opacity 0.8s;
 
     list-style-type: square;
     padding-left: 1.2rem;
     margin: initial;
     width: 100%;
     li {
-      transition: font-size 0.5s;
+      transition: font-size 1s;
       display: list-item;
       text-align: left;
       list-style-type: square;
