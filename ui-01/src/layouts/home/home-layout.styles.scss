@@ -1,0 +1,29 @@
+.rootHomeLayout {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  border: solid blue;
+  min-height: 100vh;
+  min-width: 100vw;
+
+  position: relative;
+
+  overflow: scroll;
+  -ms-overflow-style: none; // IE 10+
+  scrollbar-width: none; // Firefox
+
+  &::-webkit-scrollbar {
+    display: none; // Chrome, Safari, Opera
+  }
+
+  .containerBodyLayout {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    border: solid rgb(185, 81, 81);
+    min-width: 100%;
+    flex: 1 1;
+  }
+}

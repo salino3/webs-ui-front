@@ -1,0 +1,66 @@
+.rootAside {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  border: solid rgb(185, 81, 176);
+  min-width: 70px;
+  transition: flex-basis 1s;
+  padding: 0.25rem;
+  gap: 1rem;
+
+  .boxBtnSideBar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+    .spacer {
+      transition: width 0.8s ease-in-out;
+    }
+
+    .btnSideBar {
+      width: 60px;
+      flex-shrink: 0;
+      border: solid rgb(162, 0, 255) 1px;
+
+      &:hover,
+      &:focus {
+        border-color: unset;
+      }
+    }
+  }
+
+  h4 {
+    border: solid;
+    transition: font-size 1s;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    gap: 1rem;
+    transition: opacity 0.8s;
+
+    list-style-type: square;
+    width: 100%;
+    li {
+      display: list-item;
+      text-align: left;
+      list-style-type: square;
+      width: 100%;
+      transition: width 1s ease-in-out;
+      list-style-position: inside;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    display: none;
+  }
+}
