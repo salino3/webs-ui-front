@@ -27,7 +27,7 @@ export const Aside: React.FC = () => {
           <li
             key={num}
             style={{
-              fontSize: isExpanded ? "18px" : "10px",
+              width: isExpanded ? "100%" : "0%",
             }}
           >
             Element {num}

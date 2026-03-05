@@ -47,15 +47,16 @@
     transition: opacity 0.8s;
 
     list-style-type: square;
-    padding-left: 1.2rem;
-    margin: initial;
     width: 100%;
     li {
-      transition: font-size 1s;
       display: list-item;
       text-align: left;
       list-style-type: square;
       width: 100%;
+      transition: width 1s ease-in-out;
+      list-style-position: inside;
+      overflow: hidden;
+      white-space: nowrap;
     }
   }
 }
