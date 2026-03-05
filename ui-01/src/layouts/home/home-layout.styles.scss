@@ -2,12 +2,12 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  border: solid;
-  align-items: center;
+  align-items: stretch;
+  border: solid blue;
   min-height: 100vh;
-  min-width: 100%;
+  min-width: 100vw;
+
   position: relative;
-  box-sizing: border-box;
 
   overflow: scroll;
   -ms-overflow-style: none; // IE 10+
@@ -15,5 +15,15 @@
 
   &::-webkit-scrollbar {
     display: none; // Chrome, Safari, Opera
+  }
+
+  .containerBodyLayout {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border: solid rgb(185, 81, 81);
+    min-width: 100%;
+    flex: 1;
   }
 }

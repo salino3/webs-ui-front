@@ -1,6 +1,14 @@
-import type React from "react";
+import React, { useState } from "react";
 import "./aside.styles.scss";
 
 export const Aside: React.FC = () => {
-  return <div className="rootAside">rootAside</div>;
+  const [widthSideBar, setWidthSideBar] = useState<string>("250px");
+  return (
+    <div className="rootAside" style={{ flex: `0 1 ${widthSideBar}` }}>
+      <button onClick={() => setWidthSideBar(!!widthSideBar ? "" : "250px")}>
+        {!!widthSideBar ? "<<" : ">>"}
+      </button>
+      <h4>rootAside</h4>
+    </div>
+  );
 };

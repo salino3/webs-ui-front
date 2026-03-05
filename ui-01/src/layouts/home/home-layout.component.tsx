@@ -7,8 +7,10 @@ export const HomeLayout: React.FC = () => {
   return (
     <div className="rootHomeLayout">
       <Header />
-      <Aside />
-      <HomePage />
+      <div className="containerBodyLayout">
+        <Aside />
+        <HomePage />
+      </div>
       <AdvertisingFooter />
     </div>
   );
