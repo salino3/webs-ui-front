@@ -1,0 +1,19 @@
+.rootHomeLayout {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border: solid;
+  align-items: center;
+  min-height: 100vh;
+  min-width: 100%;
+  position: relative;
+  box-sizing: border-box;
+
+  overflow: scroll;
+  -ms-overflow-style: none; // IE 10+
+  scrollbar-width: none; // Firefox
+
+  &::-webkit-scrollbar {
+    display: none; // Chrome, Safari, Opera
+  }
+}
