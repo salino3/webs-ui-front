@@ -21,9 +21,9 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    align-items: stretch;
     border: solid rgb(185, 81, 81);
     min-width: 100%;
-    flex: 1;
+    flex: 1 1;
   }
 }

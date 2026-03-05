@@ -1,6 +1,13 @@
 .rootAside {
   display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
   border: solid rgb(185, 81, 176);
-  height: 100%;
   min-width: 70px;
+  transition: flex-basis 1s;
+
+  h4 {
+    transition: font-size 1s;
+  }
 }

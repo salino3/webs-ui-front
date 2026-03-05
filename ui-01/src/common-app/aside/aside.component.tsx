@@ -8,7 +8,7 @@ export const Aside: React.FC = () => {
       <button onClick={() => setWidthSideBar(!!widthSideBar ? "" : "250px")}>
         {!!widthSideBar ? "<<" : ">>"}
       </button>
-      <h4>rootAside</h4>
+      <h4 style={{ fontSize: `${!!widthSideBar ? "22px" : "12px"}` }}>Aside</h4>
     </div>
   );
 };
