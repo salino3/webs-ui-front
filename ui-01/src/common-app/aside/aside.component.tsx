@@ -23,14 +23,14 @@ export const Aside: React.FC = () => {
           opacity: isExpanded ? 1 : 0,
         }}
       >
-        {Array.from({ length: 10 }, (_, i) => i).map((num: number) => (
+        {Array.from({ length: 7 }, (_, i) => i).map((num: number) => (
           <li
             key={num}
             style={{
               width: isExpanded ? "100%" : "0%",
             }}
           >
-            Element {num}
+            Element {num + 1}
           </li>
         ))}
       </ul>
