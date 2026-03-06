@@ -25,6 +25,7 @@ a:hover {
 
 html {
   font-size: 16px;
+  height: 100%;
   * {
     box-sizing: border-box;
   }
@@ -35,6 +36,7 @@ html {
     display: flex;
     place-items: center;
     min-width: 320px;
+    height: 100%;
 
     h1,
     h2,
