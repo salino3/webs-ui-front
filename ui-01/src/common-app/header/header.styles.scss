@@ -3,4 +3,40 @@
   flex-direction: row;
   min-height: 120px;
   max-height: 120px;
+
+  .boxLeft,
+  .boxRight {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    height: 100%;
+  }
+
+  .boxLeft {
+    gap: 2rem;
+    .boxIcon {
+      min-height: 45px;
+      max-height: 45px;
+      min-width: 45px;
+      max-width: 45px;
+      background-color: grey;
+      border-radius: 3px;
+    }
+  }
+
+  .boxRight {
+    nav {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      a {
+        width: 25%;
+        border: solid 1px yellow;
+      }
+    }
+  }
 }
