@@ -4,7 +4,7 @@ import "./home-page.styles.scss";
 export const HomePage: React.FC = () => {
   return (
     <div className="rootHomePage">
-      <h1>rootHomeLayout</h1>
+      <h1>Root Home Layout</h1>
     </div>
   );
 };

@@ -3,8 +3,8 @@ import "./header.styles.scss";
 
 export const Header: React.FC = () => {
   return (
-    <div className="rootHeader">
+    <header className="rootHeader">
       <h2>Header Page</h2>
-    </div>
+    </header>
   );
 };
