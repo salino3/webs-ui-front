@@ -30,7 +30,7 @@ export const Aside: React.FC = () => {
               width: isExpanded ? "100%" : "0%",
             }}
           >
-            Element {num + 1}
+            <a href="#">Element {num + 1}</a>
           </li>
         ))}
       </ul>

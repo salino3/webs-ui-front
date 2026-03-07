@@ -18,7 +18,9 @@ export const Header: React.FC = () => {
       </div>
       <ul>
         {Array.from({ length: 7 }, (_, i) => i).map((num: number) => (
-          <li key={num}>Element {num + 1}</li>
+          <li key={num}>
+            <a href="#">Element {num + 1}</a>
+          </li>
         ))}
       </ul>
     </header>
