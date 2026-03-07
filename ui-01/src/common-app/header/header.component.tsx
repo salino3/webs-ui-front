@@ -10,12 +10,19 @@ export const Header: React.FC = () => {
       </div>
       <div className="boxRight">
         <nav>
-          <a href="">link 1</a>
-          <a href="">link 2</a>
-          <a href="">link 3</a>
-          <a href="">link 4</a>
+          <a href="#">link 1</a>
+          <a href="#">link 2</a>
+          <a href="#">link 3</a>
+          <a href="#">link 4</a>
         </nav>
       </div>
+      <ul>
+        {Array.from({ length: 7 }, (_, i) => i).map((num: number) => (
+          <li key={num}>
+            <a href="#">Element {num + 1}</a>
+          </li>
+        ))}
+      </ul>
     </header>
   );
 };
