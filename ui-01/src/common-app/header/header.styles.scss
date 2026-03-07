@@ -3,6 +3,7 @@
   flex-direction: row;
   min-height: 120px;
   max-height: 120px;
+  background-color: rgba(87, 0, 201, 0.774);
 
   .boxLeft,
   .boxRight {
@@ -15,6 +16,7 @@
   }
 
   .boxLeft {
+    padding: 0 1rem;
     gap: 2rem;
     .boxIcon {
       min-height: 45px;
@@ -37,6 +39,22 @@
         width: 25%;
         border: solid 1px yellow;
       }
+    }
+  }
+
+  ul {
+    display: none;
+  }
+
+  @media screen and (max-width: 500px) {
+    flex-direction: column;
+    min-height: 220px;
+    max-height: 220px;
+
+    ul {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      list-style-type: none;
     }
   }
 }
