@@ -18,9 +18,11 @@ const routes: PropsRoutes[] = [
   },
   ...Array.from({ length: 7 }, (_, index: number) => ({
     key: index,
-    path: routesApp?.page(index.toString()),
+    path: routesApp?.page(String(index + 1)),
     element: (
-      <div className={`rootElement rootElement-${index}`}>Page nº {index}</div>
+      <div className={`rootElement rootElement-${index + 1}`}>
+        Page nº {index + 1}
+      </div>
     ),
   })),
 ];
