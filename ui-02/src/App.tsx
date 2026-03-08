@@ -1,8 +1,8 @@
-import { HomeLayout } from "./layouts";
+import { AppRoutes } from "./router";
 import "./App.scss";
 
 function App() {
-  return <HomeLayout />;
+  return <AppRoutes />;
 }
 
 export default App;
