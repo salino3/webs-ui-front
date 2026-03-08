@@ -5,7 +5,11 @@ export const Header: React.FC = () => {
   return (
     <div className="rootHeader">
       <div className="boxLeft">
+        <div className="boxImage">
+          <img src="" alt="" />
+        </div>
         <h2>Header Page</h2>
+        <button>Login</button>
       </div>
       <div className="boxRight">
         <nav>
