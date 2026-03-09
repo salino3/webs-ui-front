@@ -12,10 +12,10 @@ export const Header: React.FC = () => {
           <img src="" alt="" />
         </div>
         <h2>Header Page</h2>
-        <button>Login</button>
+        <button>Log out</button>
       </div>
       <div className="boxRight">
-        <nav>
+        <nav className="navCarrousel">
           <Carrousel>
             {Array.from({ length: 7 }, (_, index: number) => (
               <li key={index} className={`linkNav linkNav-${index + 1}`}>
@@ -31,27 +31,21 @@ export const Header: React.FC = () => {
               </li>
             ))}
           </Carrousel>
-          {/* <li>
-            <a href="">Link Page 1</a>
-          </li>
-          <li>
-            <a href="">Link Page 2</a>
-          </li>
-          <li>
-            <a href="">Link Page 3</a>
-          </li>
-          <li>
-            <a href="">Link Page 4</a>
-          </li>
-          <li>
-            <a href="">Link Page 5</a>
-          </li>
-          <li>
-            <a href="">Link Page 6</a>
-          </li>
-          <li>
-            <a href="">Link Page 7</a>
-          </li> */}
+        </nav>
+        <nav className="navDesktop">
+          {Array.from({ length: 7 }, (_, index: number) => (
+            <li key={index} className={`linkNav linkNav-${index + 1}`}>
+              <Link
+                to={
+                  index === 0
+                    ? routesApp.root
+                    : routesApp.page(String(index + 1))
+                }
+              >
+                {index === 0 ? "Home Page" : `Link Page ${index + 1}`}
+              </Link>
+            </li>
+          ))}
         </nav>
       </div>
     </div>
