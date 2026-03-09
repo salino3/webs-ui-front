@@ -45,19 +45,14 @@ export const Carrousel: React.FC<{ children: React.ReactNode }> = ({
   return (
     <div className="rootCarrousel">
       <div className="containerCarrousel">
-        {dimensions?.width > 650 && (
-          <div className="containerBtns">
-            <button onClick={() => sliderRef.current?.slickPrev()}>Left</button>
-            <button onClick={() => sliderRef.current?.slickNext()}>
-              Right
-            </button>
-          </div>
-        )}
+        <button onClick={() => sliderRef.current?.slickPrev()}>{"<<"}</button>
+
         <div ref={divRef} className="carouselWrapper">
           <Slider ref={sliderRef} {...settings}>
             {children}
           </Slider>
         </div>
+        <button onClick={() => sliderRef.current?.slickNext()}>{">>"}</button>
       </div>
     </div>
   );
