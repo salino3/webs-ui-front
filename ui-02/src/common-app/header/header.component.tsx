@@ -1,7 +1,8 @@
 import type React from "react";
+import { Link } from "react-router-dom";
 import { Carrousel } from "../carrousel";
-import "./header.styles.scss";
 import { routesApp } from "../../router";
+import "./header.styles.scss";
 // https://github.com/salino3/react-inifinite-carrousel-slide
 export const Header: React.FC = () => {
   return (
@@ -16,17 +17,17 @@ export const Header: React.FC = () => {
       <div className="boxRight">
         <nav>
           <Carrousel>
-            {Array.from({ length: 8 }, (_, index: number) => (
+            {Array.from({ length: 7 }, (_, index: number) => (
               <li key={index} className={`linkNav linkNav-${index + 1}`}>
-                <a
-                  href={
+                <Link
+                  to={
                     index === 0
                       ? routesApp.root
                       : routesApp.page(String(index + 1))
                   }
                 >
                   {index === 0 ? "Home Page" : `Link Page ${index + 1}`}
-                </a>
+                </Link>
               </li>
             ))}
           </Carrousel>
