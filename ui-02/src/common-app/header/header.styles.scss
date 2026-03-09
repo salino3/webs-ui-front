@@ -1,14 +1,23 @@
 .rootHeader {
+  display: flex;
+  flex-direction: column;
+
+  border: solid rgb(175, 21, 21);
+  min-height: 150px;
+  max-height: 150px;
+  justify-content: space-between;
+  padding: 1rem;
   .boxLeft,
   .boxRight {
     display: flex;
     flex-direction: row;
-    justify-content: center;
     align-items: center;
     gap: 1rem;
   }
 
   .boxLeft {
+    justify-content: space-between;
+    padding-right: 1rem;
     .boxImage {
       min-width: 35px;
       max-width: 35px;
@@ -18,15 +27,59 @@
       border-radius: 3px;
       overflow: hidden;
     }
+
+    button {
+      white-space: nowrap;
+    }
   }
 
   .boxRight {
+    justify-content: center;
+    flex: 1 1;
     nav {
       display: flex;
-      flex-direction: row;
       justify-content: center;
       align-items: center;
-      gap: 1rem;
+      li {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        white-space: nowrap;
+      }
     }
+
+    @media screen and (min-width: 600px) {
+      nav {
+        display: grid;
+        //  12 columns base grid (12 is divisible by   4 and 3)
+        grid-template-columns: repeat(12, 1fr);
+        gap: 1rem;
+        width: 100%;
+        min-width: 360px;
+        li {
+          list-style: none;
+          text-align: center;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          // FIRST ROW: Items 1 to 4
+          // Each item takes 3 columns (3 * 4 = 12 columns total)
+          &:nth-child(-n + 4) {
+            grid-column: span 3;
+          }
+
+          // SECOND ROW: Items 5 to 7
+          // Each item takes 4 columns (4 * 3 = 12 columns total)
+          &:nth-child(n + 5) {
+            grid-column: span 4;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: 600px) {
+    flex-direction: row;
   }
 }

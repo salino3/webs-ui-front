@@ -1,0 +1,42 @@
+.rootCarrousel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem;
+  .containerCarrousel {
+    gap: 1rem;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    button {
+      color: #535bf2;
+      max-width: 2rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .carouselWrapper {
+      width: 100%;
+      overflow: hidden;
+      max-width: 60vw;
+      max-width: 95vw;
+      .slick-slide {
+        display: flex !important;
+        justify-content: center;
+        // margin: 0 !important;
+        // padding: 0 !important;
+      }
+
+      @media screen and (min-width: 600px) {
+        max-width: 60vw;
+      }
+    }
+  }
+}

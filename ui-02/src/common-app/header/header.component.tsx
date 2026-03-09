@@ -1,7 +1,13 @@
 import type React from "react";
+import { Link } from "react-router-dom";
+import { useMediaQuery } from "react-responsive";
+import { Carrousel } from "../carrousel";
+import { routesApp } from "../../router";
 import "./header.styles.scss";
 // https://github.com/salino3/react-inifinite-carrousel-slide
 export const Header: React.FC = () => {
+  const isMobile: boolean = useMediaQuery({ minWidth: "600px" });
+
   return (
     <div className="rootHeader">
       <div className="boxLeft">
@@ -9,31 +15,43 @@ export const Header: React.FC = () => {
           <img src="" alt="" />
         </div>
         <h2>Header Page</h2>
-        <button>Login</button>
+        <button>Log out</button>
       </div>
       <div className="boxRight">
         <nav>
-          <li>
-            <a href="">Link Page 1</a>
-          </li>
-          <li>
-            <a href="">Link Page 2</a>
-          </li>
-          <li>
-            <a href="">Link Page 3</a>
-          </li>
-          <li>
-            <a href="">Link Page 4</a>
-          </li>
-          <li>
-            <a href="">Link Page 5</a>
-          </li>
-          <li>
-            <a href="">Link Page 6</a>
-          </li>
-          <li>
-            <a href="">Link Page 7</a>
-          </li>
+          {!isMobile ? (
+            <Carrousel>
+              {Array.from({ length: 7 }, (_, index: number) => (
+                <li key={index} className={`linkNav linkNav-${index + 1}`}>
+                  <Link
+                    to={
+                      index === 0
+                        ? routesApp.root
+                        : routesApp.page(String(index + 1))
+                    }
+                  >
+                    {index === 0 ? "Home Page" : `Link Page ${index + 1}`}
+                  </Link>
+                </li>
+              ))}
+            </Carrousel>
+          ) : (
+            <>
+              {Array.from({ length: 7 }, (_, index: number) => (
+                <li key={index} className={`linkNav linkNav-${index + 1}`}>
+                  <Link
+                    to={
+                      index === 0
+                        ? routesApp.root
+                        : routesApp.page(String(index + 1))
+                    }
+                  >
+                    {index === 0 ? "Home Page" : `Link Page ${index + 1}`}
+                  </Link>
+                </li>
+              ))}
+            </>
+          )}
         </nav>
       </div>
     </div>
