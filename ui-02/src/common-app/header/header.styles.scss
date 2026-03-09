@@ -37,6 +37,9 @@
     justify-content: center;
     flex: 1 1;
     nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
       li {
         list-style-type: none;
         padding: 0;
@@ -45,14 +48,8 @@
       }
     }
 
-    .navCarrousel {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
     @media screen and (min-width: 600px) {
-      .navDesktop {
+      nav {
         display: grid;
         //  12 columns base grid (12 is divisible by   4 and 3)
         grid-template-columns: repeat(12, 1fr);
