@@ -62,8 +62,22 @@
 
       .navDesktop {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        // Creamos 4 columnas de igual tamaño
+        grid-template-columns: repeat(4, 1fr);
         gap: 1rem;
+        width: 100%;
+        justify-content: center;
+        justify-items: center; // Centra el contenido dentro de cada celda
+
+        li {
+          list-style: none;
+          width: 100%;
+          text-align: center;
+
+          // TRUCO: Si el elemento es el número 5 (el primero de la segunda fila)
+          // y sabemos que hay 7 elementos, podemos forzar un margen para centrar.
+          // Pero hay una forma más limpia sin hacks manuales:
+        }
       }
     }
   }
