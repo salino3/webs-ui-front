@@ -5,7 +5,6 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 //
 import "./carrousel.styles.scss";
-import { routesApp } from "../../router";
 
 export const Carrousel: React.FC<{ children: React.ReactNode }> = ({
   children,
@@ -18,7 +17,7 @@ export const Carrousel: React.FC<{ children: React.ReactNode }> = ({
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: dimensions?.width > 600 ? 2 : 1,
+    slidesToShow: 2,
     slidesToScroll: 1,
     swipe: dimensions?.width > 600 ? false : true, // Disables touch swipe
     draggable: false, // Disables mouse drag
