@@ -5,8 +5,11 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 //
 import "./carrousel.styles.scss";
+import { routesApp } from "../../router";
 
-export const Carrousel: React.FC = () => {
+export const Carrousel: React.FC<{ children: React.ReactNode }> = ({
+  children,
+}) => {
   const sliderRef = useRef<Slider | null>(null);
 
   const [divRef, dimensions] = useResizeObserver<HTMLDivElement>();
@@ -15,11 +18,11 @@ export const Carrousel: React.FC = () => {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: dimensions?.width > 650 ? 2 : 1,
+    slidesToShow: dimensions?.width > 600 ? 2 : 1,
     slidesToScroll: 1,
-    swipe: dimensions?.width > 650 ? false : true, // Disables touch swipe
+    swipe: dimensions?.width > 600 ? false : true, // Disables touch swipe
     draggable: false, // Disables mouse drag
-    touchMove: dimensions?.width > 650 ? false : true, // Prevents touch movement on mobile devices
+    touchMove: dimensions?.width > 600 ? false : true, // Prevents touch movement on mobile devices
     arrows: false, // Hides the default slick 'Slide' arrows
     //* It does not work
     // responsive: [
@@ -52,7 +55,9 @@ export const Carrousel: React.FC = () => {
           </div>
         )}
         <div ref={divRef} className="carouselWrapper">
-          <Slider ref={sliderRef} {...settings}></Slider>
+          <Slider ref={sliderRef} {...settings}>
+            {children}
+          </Slider>
         </div>
       </div>
     </div>
