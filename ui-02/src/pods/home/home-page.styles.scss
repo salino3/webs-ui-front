@@ -1,0 +1,11 @@
+.rootHomepage {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 89, 255, 0.226);
+  height: 100%;
+  width: 100%;
+  padding: 0 1rem;
+  h1 {
+    padding: 1rem;
+  }
+}
