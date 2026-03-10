@@ -32,7 +32,7 @@ export const BodyHome: React.FC = () => {
           </p>
         </div>
         {/*  */}
-        <div className="boxText01">
+        <div className="boxText boxText01">
           <div className="boxImage">
             <img src="../../../../../public/test_image.png" alt="Test Image" />
           </div>
@@ -57,7 +57,7 @@ export const BodyHome: React.FC = () => {
         </div>
 
         {/*  */}
-        <div className="boxText02">
+        <div className="boxText boxText02">
           <div className="boxImage">
             <img src="../../../../../public/test_image.png" alt="Test Image" />
           </div>
