@@ -5,6 +5,10 @@ export const BodyHome: React.FC = () => {
   return (
     <div className="rootBodyHome">
       <div className="firstBox">
+        <div className="boxImage">
+          <img src="../../../../../public/test_image.png" alt="Test Image" />
+        </div>
+
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis
           atque velit dolor deleniti, nihil dolorem? At eaque labore modi culpa
@@ -24,9 +28,6 @@ export const BodyHome: React.FC = () => {
           dolorem provident cumque consequuntur, mollitia cupiditate totam
           dolore? Officiis sit minus natus id non!
         </p>
-        <div className="boxImage">
-          <img src="../../../../../public/test_image.png" alt="Test Image" />
-        </div>
       </div>
     </div>
   );
