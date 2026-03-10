@@ -9,7 +9,6 @@ export const BodyHome: React.FC = () => {
           <div className="boxImage">
             <img src="../../../../../public/test_image.png" alt="Test Image" />
           </div>
-
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis
             atque velit dolor deleniti, nihil dolorem? At eaque labore modi
@@ -29,6 +28,55 @@ export const BodyHome: React.FC = () => {
             beatae eveniet officiis, voluptatum, nihil dolorem provident cumque
             consequuntur, mollitia cupiditate totam dolore? Officiis sit minus
             natus id non!
+          </p>
+        </div>
+        {/*  */}
+        <div className="boxText boxText01">
+          <div className="boxImage">
+            <img src="../../../../../public/test_image.png" alt="Test Image" />
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque,
+            ullam? Doloribus dolorum pariatur sunt accusamus unde nobis
+            temporibus laborum sit voluptate at debitis assumenda, atque cumque
+            nihil voluptatum nulla vitae? Ullam id aspernatur molestias facere
+            autem. Minus, obcaecati autem maxime ex expedita quisquam, error
+            cumque dolorem facilis labore fugit nulla nobis! Quis eligendi totam
+            deleniti optio minus deserunt doloremque quae? Error quo iure non,
+            distinctio quos autem asperiores fuga repudiandae quaerat?
+            Blanditiis voluptas fugiat quidem est quibusdam aut voluptatem ullam
+            aliquid optio dolore. Autem quae quaerat, itaque similique provident
+            alias! Laudantium sequi assumenda ex quasi ipsa. Soluta doloremque
+            fugiat corporis harum aperiam esse quia quaerat, minus delectus
+            tempore, veniam eius? Maxime nemo magnam asperiores repellat nobis,
+            dolores odio quis aspernatur! Ipsam odit expedita unde aperiam
+            cupiditate autem iste nemo provident eaque asperiores perferendis,
+            libero aspernatur, sequi, animi odio veritatis minima alias
+          </p>
+        </div>
+
+        {/*  */}
+        <div className="boxText boxText02">
+          <div className="boxImage">
+            <img src="../../../../../public/test_image.png" alt="Test Image" />
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque,
+            ullam? Doloribus dolorum pariatur sunt accusamus unde nobis
+            temporibus laborum sit voluptate at debitis assumenda, atque cumque
+            nihil voluptatum nulla vitae? Ullam id aspernatur molestias facere
+            autem. Minus, obcaecati autem maxime ex expedita quisquam, error
+            cumque dolorem facilis labore fugit nulla nobis! Quis eligendi totam
+            deleniti optio minus deserunt doloremque quae? Error quo iure non,
+            distinctio quos autem asperiores fuga repudiandae quaerat?
+            Blanditiis voluptas fugiat quidem est quibusdam aut voluptatem ullam
+            aliquid optio dolore. Autem quae quaerat, itaque similique provident
+            alias! Laudantium sequi assumenda ex quasi ipsa. Soluta doloremque
+            fugiat corporis harum aperiam esse quia quaerat, minus delectus
+            tempore, veniam eius? Maxime nemo magnam asperiores repellat nobis,
+            dolores odio quis aspernatur! Ipsam odit expedita unde aperiam
+            cupiditate autem iste nemo provident eaque asperiores perferendis,
+            libero aspernatur, sequi, animi odio veritatis minima alias
           </p>
         </div>
         {/*  */}
