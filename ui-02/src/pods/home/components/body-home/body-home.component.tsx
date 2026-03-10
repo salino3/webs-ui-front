@@ -31,6 +31,24 @@ export const BodyHome: React.FC = () => {
             natus id non!
           </p>
         </div>
+        {/*  */}
+        <div className="boxText01">
+          <div className="boxImage">
+            <img src="../../../../../public/test_image.png" alt="Test Image" />
+          </div>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda
+            aliquam doloremque repellat laudantium beatae tempore, dolor
+            repellendus optio iusto minima inventore molestias similique
+            excepturi nemo amet quia sed mollitia iure. Similique cupiditate
+            minus sunt sed quo sequi provident iure deserunt ipsam, vel unde et
+            saepe doloremque natus! Quos enim ipsam aliquid nostrum id eius
+            culpa animi rem deleniti, at voluptates! Maxime omnis, recusandae
+            itaque error eligendi iusto labore rerum aut, rem eaque vero!
+            Provident ipsum sint maxime laboriosam! Laudantium a itaque sequi
+            accusamus ab expedita sed voluptatem temporibus adipisci numquam.
+          </p>
+        </div>
       </div>
     </div>
   );
