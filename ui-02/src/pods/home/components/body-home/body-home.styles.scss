@@ -3,4 +3,35 @@
   flex-direction: column;
   height: 100%;
   width: 100%;
+
+  .firstBox {
+    display: flex;
+    flex-direction: column;
+    border: solid black;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    p {
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+      text-align: justify;
+      word-wrap: break-word; // Allows long words to break onto the next line if they exceed the container's width. Prevents overflow issues.
+      text-justify: inter-word; // Justifies text by adjusting spacing only between words, ensuring alignment on both left and right edges.
+    }
+
+    .boxImage {
+      max-width: 70px;
+      max-height: 70px;
+      position: sticky;
+      border-radius: 50%;
+      overflow: hidden;
+      object-fit: cover;
+      img {
+        max-width: 70px;
+        max-height: 70px;
+      }
+    }
+  }
 }
