@@ -1,5 +1,6 @@
 import type React from "react";
 import "./body-home.styles.scss";
+import { ReactWindow } from "../react-window/react-window.component";
 
 export const BodyHome: React.FC = () => {
   return (
@@ -128,6 +129,7 @@ export const BodyHome: React.FC = () => {
             libero aspernatur, sequi, animi odio veritatis minima alias
           </p>
         </div>
+        <ReactWindow />
       </div>
     </div>
   );

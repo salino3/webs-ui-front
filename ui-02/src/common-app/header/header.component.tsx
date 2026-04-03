@@ -1,5 +1,5 @@
 import type React from "react";
-import { Link } from "react-router-dom";
+import { Link } from "react-router";
 import { useMediaQuery } from "react-responsive";
 import { Carrousel } from "../carrousel";
 import { routesApp } from "../../router";
@@ -12,7 +12,7 @@ export const Header: React.FC = () => {
     <div className="rootHeader">
       <div className="boxLeft">
         <div className="boxImage">
-          <img src="../../../public/test_image.png" alt="Test Image" />
+          <img src="../../../../test_image.png" alt="Test Image" />
         </div>
         <h2>Header Page</h2>
         <button>Log out</button>
