@@ -1,5 +1,5 @@
 import React, { Suspense } from "react";
-import { Routes, Route, Navigate, Outlet } from "react-router-dom";
+import { Routes, Route, Navigate, Outlet } from "react-router";
 import { LazyHomePage, routesApp } from "./interface-routes";
 import { HomeLayout } from "../layouts";
 
